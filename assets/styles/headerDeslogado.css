@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h5{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+
+h2{
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.custom-input {
+    border: 1px solid black; /* Borda preta fina */
+    border-radius: 0; /* Borda sem arredondamento */
+}
+
+.custom-span{
+
+    border: 1px solid black;
+}
+
+.custom-span::before{
+
+    content: '';
+    border-left: 0px solid black;
+}
+
+.custom-button {
+    background-color: rgb(255, 255, 255); 
+    border-radius: 0;
+}
+
+.custom-icon {
+    color: black; /* Cor preta para o ícone */
+}

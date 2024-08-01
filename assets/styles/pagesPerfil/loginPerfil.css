@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+    max-width: 1872px;
+    height: 600px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.section .container .containerUnico{
+    margin-top: 20vh;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.section .container .containerUnico .form-control{ 
+    border-bottom: #3DED97;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style:  solid;
+    border-bottom-width: 2px;  
+    border-radius: 0;
+}
+
+.section .container .containerUnico .form-control:focus{ 
+    box-shadow: none;
+    outline: none;
+}
+
+.section .container .containerUnico button{
+    background-color: #00ff04;
+}
+  
+.section .container .containerUnico button:hover,
+.section .container .containerUnico button:focus {
+background-color: #00ff04 !important;
+color: #fff;
+}
+
+.section .container .containerUnico .waves-effect {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}

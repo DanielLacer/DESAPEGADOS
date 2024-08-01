@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+    max-width: 1872px;
+    height: 600px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.containerInformacoesUsuario p{
+    font-size: 2vh;
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.section .container .containerEsquerda{
+    background-color: #3ded3f;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right: none;
+}
+
+.section .container .containerEsquerda img{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+
+.section .container .containerDireita{
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-left: none;
+}
+
+.section .container .containerDireita .containerInformacoesUsuario .coluna .form-control{
+
+    
+    border-bottom: #3DED97;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style:  solid;
+    border-bottom-width: 2px;  
+    border-radius: 0;
+
+}
+
+.section .container .containerDireita .containerInformacoesUsuario .coluna .form-control:disabled{
+
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    color: #3DED97;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+}
+
+/* CSS Buttons By Michal Szymanski */
+
+.section .container .containerDireita .acoesPerfil .btn {
+
+    line-height: 31px;
+    padding: 10px;
+    border: 0;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none !important;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.section .container .containerDireita .acoesPerfil .btn p{
+
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.editarPerfil p{
+    margin-bottom: 0rem !important;
+}
+
+
+.section .container .containerDireita .acoesPerfil .btn-success {
+    background-color: #00c853;
+}
+  
+.section .container .containerDireita .acoesPerfil .btn-success:hover,
+.section .container .containerDireita .acoesPerfil .btn-success:focus {
+background-color: #00e25e !important;
+color: #fff;
+}
+
+.section .container .containerDireita .acoesPerfil .waves-effect {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}

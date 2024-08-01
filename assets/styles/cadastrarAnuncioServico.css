@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+    max-width: 1872px;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.section{
+    background-color: rgb(237, 237, 237);
+}
+.section .container .containerEsquerda{
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right-width: 1px;
+    border-right-color: black;
+}
+  
+.section .container .containerEsquerda .divCadastrarImagens .waves-effect:hover,
+.section .container .containerEsquerda .divCadastrarImagens .waves-effect:focus {
+    background-color: #00d9ff !important;
+    color: #fff;
+}
+
+.section .container .containerEsquerda .divCadastrarImagens .waves-effect {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after{
+  content: "\21C0";
+  font-size: 40px;
+  color: #30cfcc;
+}
+
+.carousel-control-prev-icon:after {
+  content: "\21BC";
+  font-size: 40px;
+  color: #30cfcc;
+}
+
+.section .container .containerDireita{
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-left: none;
+}
+
+.section .container .containerDireita label{ 
+    font-size: 0.9em;
+}
+
+.section .container .containerDireita .form-control{ 
+    border-bottom: #3DED97;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style:  solid;
+    border-bottom-width: 2px;  
+    border-radius: 0;
+}
+
+.section .container .containerDireita .form-control:focus{ 
+    box-shadow: none;
+    outline: none;
+}
+
+.section .container .containerDireita .textarea{ 
+    resize: none !important;
+    height: 200px !important;
+}
+
+.section .container .containerDireita .cadastrarAnuncio{ 
+   background-color: #00ff04 !important;
+}
+
+.section .container .containerDireita .cadastrarAnuncio:focus{ 
+   background-color: #00e25e !important;
+}
+

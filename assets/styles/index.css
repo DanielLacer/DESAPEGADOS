@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    max-width: 1872px;
+    height: 728px;
+}
+  
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.bannerPrincipal{
+
+    height: 420px; 
+    border: 1px solid #000;
+    background: url(../imagens_padrao/bannerPrincipal.png) no-repeat;
+    background-size: 110%; 
+    background-position: center; 
+}
+
+.bannersSecundario{
+
+    height: 260px; 
+    border: 1px solid #000;
+    background-size: contain; 
+    background-position: center; 
+    background-color: #E4E5E7
+
+}
+
+.bannersSecundario .bannerTempo{
+
+    background: url(../imagens_padrao/bannerTempo.png) no-repeat;
+    height: 220px; 
+    width: 45%;
+    background-size: 110%; 
+    background-position: center; 
+    margin-left: 3%;
+    filter: brightness(2);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.bannersSecundario .bannerTempo:hover{
+
+    transform: scale(1.1);
+    filter: brightness(1.4);
+    text-shadow: 0 0 20px #03ff85;
+
+}
+
+.bannersSecundario .bannerTempo .linkBannerTempo{
+
+    height: 220px;
+    width: 100%;
+
+}
+
+.bannersSecundario .bannerProduto{
+
+    background: url(../imagens_padrao/bannerProduto.png) no-repeat;
+    height: 220px; 
+    width: 45%;
+    background-size: 110%; 
+    background-position: center; 
+    margin-right: 3%;
+    filter: brightness(2);
+    cursor: pointer;
+    transition: transform 0.8s;
+
+}
+
+.bannersSecundario .bannerProduto:hover{
+
+    transform: scale(1.1);
+    filter: brightness(1.4);
+    text-shadow: 0 0 20px #00ff04
+
+}
+
+.bannersSecundario .bannerProduto .linkBannerProduto{
+
+    height: 220px;
+    width: 100%;
+
+}
+
+.bannersSecundario .titulo{
+
+    color: #E4E5E7;
+    font-family: 'Mulish', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.bannersSecundario .subTitulo{
+
+    font-family: 'Mulish', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.bannersSecundario .bannerTempo .subTitulo{
+    color: #03ff85;
+}
+
+.bannersSecundario .bannerProduto .subTitulo{
+    color: #00ff04;
+}

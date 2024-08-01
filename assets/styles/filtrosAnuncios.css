@@ -1,0 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+input:focus {
+    outline: 0 !important ;
+    box-shadow: 0 0 0 0 !important ;
+}
+
+select:focus {
+    outline: 0 !important ;
+    box-shadow: 0 0 0 0 !important ;
+}
+
+.containerFiltro {
+    height: 60px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+} 
+
+.containerFiltro .filtros{
+    margin-right: 1rem !important;
+} 

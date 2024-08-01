@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+  max-width: 1872px;
+  height: 100%;
+}
+  
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+.lato{
+  color: rgb(19, 19, 19);
+  font-family: 'Lato', sans-serif;
+  font-size: 2vh !important;
+}
+
+.mulish{
+  color: rgb(0, 0, 0);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+}
+
+.containerAnuncios .carousel-item .item-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px; 
+  width: 1200px;
+  margin-left: 125px;
+}
+
+.anuncio{
+  height: 270px; 
+  width: 260px !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.anuncio:hover{
+  transform: scale(1.05);
+}
+
+.anuncio .tituloProduto{
+  display: -webkit-box;
+  max-width: 258px;
+  height: 48px;
+  word-wrap: break-word; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after{
+  content: "\21C0";
+  font-size: 40px;
+  color: #30CF31;
+}
+
+.carousel-control-prev-icon:after {
+  content: "\21BC";
+  font-size: 40px;
+  color: #30CF31;
+}
+    
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+    max-width: 1872px;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+select {
+    border-radius: 0px;
+}
+
+h6{
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+
+.lato{
+    color: rgb(19, 19, 19);
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh !important;
+}
+
+.mulish{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+
+.section .container #carouselServicos .carousel-inner .carousel-item .anunciosServicos .anuncio:nth-child(1){
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section .container #carouselServicos .carousel-inner .carousel-item .anunciosServicos .anuncio:nth-child(2){
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section .container #carouselServicos .carousel-inner .carousel-item .anunciosServicos .anuncio:nth-child(3){
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section .container #carouselServicos .carousel-inner .carousel-item .anunciosServicos .anuncio .image-container{
+    height: 100%;
+}
+
+.section .container #carouselServicos .carousel-inner .carousel-item .anunciosServicos .anuncio .image-container img{
+    width: 600px; 
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor do overlay, 0.5 é a transparência */
+    transition: opacity 1s;
+    height: 100%;
+    width: auto; 
+}
+
+.overlay .tituloServico{
+    color: white;
+    height: 70px;
+    word-wrap: break-word; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after{
+  content: "\21C0";
+  font-size: 40px;
+  color: #30CF31;
+}
+
+.carousel-control-prev-icon:after {
+  content: "\21BC";
+  font-size: 40px;
+  color: #30CF31;
+}
+    

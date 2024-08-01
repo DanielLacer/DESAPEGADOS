@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Manrope:wght@300 & display=swap');
+
+html{
+    max-width: 1872px;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.section{
+    background-color: rgb(237, 237, 237);
+}
+
+.section .container .containerUnico{
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.section .container .containerUnico .containerInformacoesUsuario .coluna .form-control{
+
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    color: #2ea46b;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    border-bottom: #00ff04;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style:  solid;
+    border-bottom-width: 2px;  
+    border-radius: 0;
+
+}
+
+.section .container .containerUnico .containerInformacoesUsuario .coluna .form-control:focus{ 
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* CSS Buttons By Michal Szymanski */
+
+.section .container .containerUnico .acoesPerfil .btn {
+
+    line-height: 31px;
+    padding: 10px;
+    border: 0;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none !important;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.editarPerfil p{
+    margin-bottom: 0rem !important;
+}
+
+
+.section .container .containerUnico .acoesPerfil .btn-success {
+    background-color: #00ff04;
+}
+  
+.section .container .containerUnico .acoesPerfil .btn-success:hover,
+.section .container .containerUnico .acoesPerfil .btn-success:focus {
+background-color: #00ff04 !important;
+color: #fff;
+}
+
+.section .container .containerUnico .acoesPerfil .waves-effect {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
