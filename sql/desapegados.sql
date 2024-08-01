@@ -162,8 +162,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nome_usuario`, `telefone_usuario`, `senha_usuario`, `email_usuario`, `estado_usuario`, `cidade_usuario`, `data_cadastro`, `nivel_usuario`, `foto_usuario`) VALUES
-(00000000022, 'Daniel', '4788945185', '$2y$10$BEcLYzLAWgRiakvrnYgOJOD6hThKMPpsspT6u10zY9OgPKVw89XNK', 'daniel@gmail.com', 'São Paulo', 'Guarulhos', '2024-05-07', 2, '0ab37f5a379a4436ea96a044356135d1.jpg'),
-(00000000066, 'aparecida', '4799581662', '$2y$10$g8KwS/YA0GCDPG7NbJE8k.itmINBe8O51Gp2UnAz7bQfPiydoEQVq', 'aparecida@gmail.com', 'São Paulo', 'Álvares Machado', '2024-07-27', 2, '5ce95d155adab36727be5f55990503c2.jpg'),
+(00000000022, 'Daniel', '4788942183', '$2y$10$BEcLYzLAWgRiakvrnYgOJOD6hThKMPpsspT6u10zY9OgPKVw89XNK', 'daniel@gmail.com', 'São Paulo', 'Guarulhos', '2024-05-07', 2, '0ab37f5a379a4436ea96a044356135d1.jpg'),
+(00000000066, 'teste1', '4799581161', '$2y$10$g8KwS/YA0GCDPG7NbJE8k.itmINBe8O51Gp2UnAz7bQfPiydoEQVq', 'aparecida@gmail.com', 'São Paulo', 'Álvares Machado', '2024-07-27', 2, '5ce95d155adab36727be5f55990503c2.jpg'),
 (00000000067, 'teste6', '4788945181', '$2y$10$x9z6e3ePSxKkMOwcpI6kK.o2jK0RIze.1X7G.MCC1b.3Tx4VHMkSm', 'teste5@gmail.com', 'São Paulo', 'Americana', '2024-07-30', 1, '690e9afd1724ab810fe45ce98f6c694c.jpg'),
 (00000000068, 'teste7', '4799581661', '$2y$10$ZgHtmVYYrC6OL/h6B.w4Wuxw2uDMI/Q85kjXQ9jo0YqVFJuX2NByi', 'teste7@gmail.com', 'Espírito Santo', 'Colatina', '2024-07-30', 1, NULL),
 (00000000069, 'teste8', '4788945182', '$2y$10$NATa9xOzYC0nmHKTaeSU/eAGmR/MPefzoTS/nDlfyFN4hcCkAopay', 'teste8@gmail.com', 'Rio de Janeiro', 'Cardoso Moreira', '2024-07-30', 2, NULL),
