@@ -12,40 +12,68 @@ if($_GET["id_usuario"] != ""){
 }
 
 $stmt = $conn->stmt_init();
-$stmt = $conn->prepare("SELECT foto_usuario FROM usuarios WHERE id_usuario = ?");
+$stmt = $conn->prepare("SELECT * FROM usuarios usu INNER JOIN produtos pro ON usu.id_usuario = pro.id_usuario WHERE usu.id_usuario = ?");
 $stmt->bind_param("i", $id_usuario);
 $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    $result = $result->fetch_assoc();
-    if($result['foto_usuario'] != null){
-        $remover_fotos = array_filter(explode(";", $result['foto_usuario']));
-        $urlImagem = '';
 
-        $urlImagem .= $diretorio.$remover_fotos[0];
-        if(file_exists($urlImagem)){
-            unlink($urlImagem);
-        }
-    }   
-}
+  $response['status']  = 'error';
+  $response['message'] = "O usuário não pode ser excluído porque possui anúncios de produtos cadastrados no sistema. Exclua primeiro os anúncios desse usuário para, posteriormente, removê-lo.";
+    
+}else{
 
-$conn->autocommit(FALSE);
-$stmt = $conn->stmt_init();
-$stmt = $conn->prepare("DELETE FROM usuarios WHERE id_usuario = ?");
-$stmt->bind_param("s", $id_usuario);
+  $stmt = $conn->stmt_init();
+  $stmt = $conn->prepare("SELECT * FROM usuarios usu INNER JOIN servicos sev ON usu.id_usuario = sev.id_usuario WHERE usu.id_usuario = ?");
+  $stmt->bind_param("i", $id_usuario);
+  $stmt->execute();
+  $result = $stmt->get_result();
 
-if ($stmt->execute()) {
-    $conn->commit();
-    $response['status']  = 'success';
-    $response['message'] = "Usuário deletado com sucesso.";
-} else {
-    $conn->rollback();
+  if ($result->num_rows > 0) {
+
     $response['status']  = 'error';
-    $response['message'] = "Erro ao deletar o usuário: " . $stmt->error;
+    $response['message'] = "O usuário não pode ser excluído porque possui anúncios de serviços cadastrados no sistema. Exclua primeiro os anúncios desse usuário para, posteriormente, removê-lo.";
+      
+  }else{
+
+    $stmt = $conn->stmt_init();
+    $stmt = $conn->prepare("SELECT foto_usuario FROM usuarios WHERE id_usuario = ?");
+    $stmt->bind_param("i", $id_usuario);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $result = $result->fetch_assoc();
+        if($result['foto_usuario'] != null){
+            $remover_fotos = array_filter(explode(";", $result['foto_usuario']));
+            $urlImagem = '';
+            $urlImagem .= $diretorio.$remover_fotos[0];
+            if(file_exists($urlImagem)){
+                unlink($urlImagem);
+            }
+        }   
+    }
+
+    $conn->autocommit(FALSE);
+    $stmt = $conn->stmt_init();
+    $stmt = $conn->prepare("DELETE FROM usuarios WHERE id_usuario = ?");
+    $stmt->bind_param("i", $id_usuario);
+
+    if ($stmt->execute()) {
+        $conn->commit();
+        $response['status']  = 'success';
+        $response['message'] = "Usuário deletado com sucesso.";
+    } else {
+        $conn->rollback();
+        $response['status']  = 'error';
+        $response['message'] = "Erro ao deletar o usuário: " . $stmt->error;
+    }
+
+    $conn->autocommit(TRUE);
+  }
 }
 
-$conn->autocommit(TRUE);
 $stmt->close();
 $conn->close();
 
