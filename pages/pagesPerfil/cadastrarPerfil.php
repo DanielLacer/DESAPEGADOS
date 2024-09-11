@@ -71,7 +71,7 @@ require '../../config/conexao.php';
             <div class="coluna col-3 d-flex flex-column" style="height: 270px">
                 <div class="senha">
                   <div class="label d-flex justify-content-center align-items-center"><label for="iSenhaUsuario">Senha:</label></div>
-                  <input class="form-control" type="text" id="iSenhaUsuario" name="nSenhaUsuario" value="" placeholder="Abc321">
+                  <input class="form-control" type="password" id="iSenhaUsuario" name="nSenhaUsuario" value="" placeholder="Abc321">
                 </div>
                 <div class="cidade mt-5 d-none">
                   <div class="label d-flex justify-content-center align-items-center"><label for="iCidadeUsuario">Cidade:</label></div>

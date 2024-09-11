@@ -50,7 +50,7 @@ $_GET['tipoAnuncio'] = 0;
               <div class="row col-12 mb-2">
                   <div class="senha">
                       <div class="label d-flex justify-content-center align-items-center"><label for="iSenha">Senha:</label></div>
-                      <input class="form-control" type="text" placeholder="Sua senha..." id="iSenha" name="nSenha" value="">
+                      <input class="form-control" type="password" placeholder="Sua senha..." id="iSenha" name="nSenha" value="">
                   </div>
               </div>
               <div class="row col-12">
