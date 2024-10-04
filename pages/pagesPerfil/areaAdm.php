@@ -496,7 +496,7 @@ $_GET['tipoAnuncio'] = 0;
           let novaCategoria = $('#iSalvarCategoriaProduto').val();
 
           $.ajax({
-            method: "UPDATE",
+            method: "POST",
             url: "../../config/cadastrarCategoriaProduto.php?nova_categoria=" + novaCategoria,
             success: function(response) {
               if (response.status === 'error') {
@@ -527,7 +527,7 @@ $_GET['tipoAnuncio'] = 0;
           let novaCategoria = $('#iSalvarCategoriaServico').val();
 
           $.ajax({
-            method: "UPDATE",
+            method: "POST",
             url: "../../config/cadastrarCategoriaServico.php?nova_categoria=" + novaCategoria,
             success: function(response) {
               if (response.status === 'error') {
@@ -558,7 +558,7 @@ $_GET['tipoAnuncio'] = 0;
           let removerCategoria = $('#iRemoverCategoriaProduto').val();
 
           $.ajax({
-            method: "UPDATE",
+            method: "DELETE",
             url: "../../config/removerCategoriaProduto.php?remover_categoria=" + removerCategoria,
             success: function(response) {
               if (response.status === 'error') {
@@ -589,7 +589,7 @@ $_GET['tipoAnuncio'] = 0;
           let removerCategoria = $('#iRemoverCategoriaServico').val();
 
           $.ajax({
-            method: "UPDATE",
+            method: "DELETE",
             url: "../../config/removerCategoriaServico.php?remover_categoria=" + removerCategoria,
             success: function(response) {
               if (response.status === 'error') {
